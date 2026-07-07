@@ -24,7 +24,6 @@ header {
   margin: 0;
 }
 
-/* Navbar */
 nav {
   background-color: var(--color-acento);
   position: sticky;
