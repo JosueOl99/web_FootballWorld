@@ -3,9 +3,9 @@ html {
 }
 
 :root {
-  --color-primario: #1e3d59;
+  --color-primario: #1e3c8a;
   --color-secundario: #f5f0e1;
-  --color-acento: #ff6e40;
+  --color-acento: #0a6a0c;
 }
 
 body {
@@ -20,46 +20,8 @@ header {
   background-color: var(--color-primario);
   color: white;
   text-align: center;
-  padding: 16px;
+  padding: 40px;
   margin: 0;
-}
-
-nav {
-  background-color: var(--color-acento);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  margin: 0;
-  padding: 16px 0;
-}
-
-.navbar {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  gap: 30px;
-}
-
-.navbar li {
-  margin: 0;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 18px;
-  padding: 8px 16px;
-}
-
-.navbar i {
-  font-size: 20px;
 }
 
 .intro {
@@ -68,6 +30,21 @@ nav {
   align-items: center;
   padding: 32px;
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-size: 36px;
+  color: var(--color-acento);
+  margin-top: 20px;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--color-primario);
+  margin-top: 18px;
 }
 
 .jugadores {
@@ -82,7 +59,7 @@ nav {
 }
 
 .jugador {
-  border: 2px solid var(--color-primario);
+  border: 2px solid var(--color-acento);
   border-radius: 12px;
   padding: 32px;
   margin: 32px auto;
@@ -92,7 +69,7 @@ nav {
 }
 
 .jugador h3 {
-  color: var(--color-acento);
+  color: var(--color-primario);
   margin-bottom: 16px;
   font-size: 26px;
 }
@@ -194,9 +171,9 @@ nav {
 }
 
 .contacto {
-  background-color: #f5f5f5;
-  text-align: center;
+  background-color: #fdfdfd;
   padding: 48px 16px;
+  border-radius: 8px;
 }
 
 .contacto h2 {
@@ -205,11 +182,25 @@ nav {
 }
 
 .contacto p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-primario);
   margin-bottom: 24px;
-  font-size: 18px;
 }
 
-.btn-contacto {
+.contacto h3 {
+  font-size: 22px;
+  color: var(--color-acento);
+  margin-bottom: 20px;
+}
+
+.contacto .form-label {
+  font-size: 18px;
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.btn-enviar {
   background-color: var(--color-acento);
   color: white;
   border: none;
@@ -218,12 +209,10 @@ nav {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  text-decoration: none;
-  display: inline-block;
 }
 
-.btn-contacto:hover {
-  background-color: var(--color-primario);
+.btn-enviar:hover {
+  background-color: var(--color-primario); 
 }
 
 .footer {
@@ -250,4 +239,79 @@ nav {
 
 .footer p {
   font-size: 14px;
+}
+
+.torneos-preview,
+.jugadores-preview,
+.equipos-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.torneos-preview {
+  flex-direction: row;
+}
+
+.jugadores-preview {
+  flex-direction: row-reverse;
+}
+
+.equipos-preview {
+  flex-direction: row;
+}
+
+.torneos-preview .imagen img,
+.jugadores-preview .imagen img,
+.equipos-preview .imagen img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15); 
+}
+
+.torneos-preview .descripcion,
+.jugadores-preview .descripcion,
+.equipos-preview .descripcion {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-primario);
+}
+
+.torneos-preview h3,
+.jugadores-preview h3,
+.equipos-preview h3 {
+  color: var(--color-acento);
+  font-size: 28px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.torneos-preview a,
+.jugadores-preview a,
+.equipos-preview a {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: var(--color-acento);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.torneos-preview a:hover,
+.jugadores-preview a:hover,
+.equipos-preview a:hover {
+  background-color: var(--color-primario);
 }

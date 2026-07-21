@@ -1,0 +1,39 @@
+#menu-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  background-color: var(--color-acento);
+  width: 100%;
+  margin: 0;
+  padding: 16px 32px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+.navbar i {
+  font-size: 20px;
+}

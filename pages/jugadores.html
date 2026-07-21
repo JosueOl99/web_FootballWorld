@@ -4,77 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FootballWorld</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/menu.css">
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css.map">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>FootballWorld</h1>
   </header>
 
-  <nav>
-    <ul class="navbar">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="torneos.html">Torneos</a></li>
-      <li><a href="jugadores.html">Jugadores Históricos</a></li>
-      <li><a href="equipos.html">Equipos Históricos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+  <div id="menu-container"></div>
 
   <main>
     <section id="jugadores" class="jugadores">
       <h2>Jugadores Históricos</h2>
 
-      <article class="jugador">
+      <article class="jugador" data-aos="fade-up">
         <h3>Lionel Messi</h3>
-        <img src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Lionel Messi" class="imagen-jugador">
+        <img src="/img/Jugadores/Messi.webp" alt="Lionel Messi" class="imagen-jugador">
         <p><strong>País:</strong> Argentina 🇦🇷</p>
         <p><strong>Clubes:</strong> FC Barcelona, PSG, Inter Miami</p>
         <p><strong>Títulos destacados:</strong> Mundial 2022, 4 Champions League, 10 Ligas españolas, 7 Balones de Oro</p>
         <p>Considerado el mejor jugador de la historia, famoso por su visión de juego, regate y goles.</p>
       </article>
 
-      <article class="jugador">
+      <article class="jugador" data-aos="fade-right">
         <h3>Diego Maradona</h3>
-        <img src="https://pbs.twimg.com/media/EWESHMOXsAAFfF1.jpg" alt="Diego Maradona" class="imagen-jugador">
+        <img src="/img/Jugadores/Maradona.webp" alt="Diego Maradona" class="imagen-jugador">
         <p><strong>País:</strong> Argentina 🇦🇷</p>
         <p><strong>Clubes:</strong> Boca Juniors, Barcelona, Napoli</p>
         <p><strong>Títulos destacados:</strong> Mundial 1986, 2 Serie A con Napoli, Copa del Rey</p>
         <p>Ícono del fútbol mundial, recordado por su liderazgo en el Mundial 86 y su paso legendario por Napoli.</p>
       </article>
 
-      <article class="jugador">
+      <article class="jugador" data-aos="fade-up-left">
         <h3>Pelé</h3>
-        <img src="https://img.vavel.com/pele-1670369741960.webp" alt="Pelé" class="imagen-jugador">
+        <img src="/img/Jugadores/Pele.webp" alt="Pelé" class="imagen-jugador">
         <p><strong>País:</strong> Brasil 🇧🇷</p>
         <p><strong>Clubes:</strong> Santos, New York Cosmos</p>
         <p><strong>Títulos destacados:</strong> 3 Mundiales (1958, 1962, 1970), 2 Copas Libertadores</p>
         <p>El "Rey del Fútbol", reconocido por su capacidad goleadora y su impacto global en el deporte.</p>
       </article>
 
-      <article class="jugador">
+      <article class="jugador" data-aos="fade-down-right">
         <h3>Johan Cruyff</h3>
-        <img src="https://d3h7g948tee6ho.cloudfront.net/wp-content/uploads/2022/04/gol-imposible.jpg" alt="Johan Cruyff" class="imagen-jugador">
+        <img src="/img/Jugadores/Johan-Cruyff.webp" alt="Johan Cruyff" class="imagen-jugador">
         <p><strong>País:</strong> Países Bajos 🇳🇱</p>
         <p><strong>Clubes:</strong> Ajax, FC Barcelona</p>
         <p><strong>Títulos destacados:</strong> 3 Copas de Europa, 8 Eredivisie, 1 Liga española</p>
         <p>Figura clave del "fútbol total", revolucionó el juego con su inteligencia táctica y estilo elegante.</p>
       </article>
 
-      <article class="jugador">
+      <article class="jugador" data-aos="fade-down-left">
         <h3>Zinedine Zidane</h3>
-        <img src="https://editorial.uefa.com/resources/025d-0f69b209e165-4b70a310f06b-1000/bayer_leverkusen_v_real_madrid_-_champions_league_final_2002.jpeg" alt="Zinedine Zidane" class="imagen-jugador">
+        <img src="/img/Jugadores/Zidane.webp" alt="Zinedine Zidane" class="imagen-jugador">
         <p><strong>País:</strong> Francia 🇫🇷</p>
         <p><strong>Clubes:</strong> Juventus, Real Madrid</p>
         <p><strong>Títulos destacados:</strong> Mundial 1998, Eurocopa 2000, Champions League 2002</p>
         <p>Elegante mediocampista, recordado por su técnica impecable y goles decisivos en finales.</p>
       </article>
 
-      <article class="jugador">
+      <article class="jugador" data-aos="fade-down-right">
         <h3>Cristiano Ronaldo</h3>
-        <img src="https://s2.elespanol.com/2018/07/03/elbernabeu/real-madrid/futbol/futbol_319734402_91106588_1706x1280.jpg" alt="Cristiano Ronaldo" class="imagen-jugador">
+        <img src="/img/Jugadores/Cristiano-Ronaldo.webp" alt="Cristiano Ronaldo" class="imagen-jugador">
         <p><strong>País:</strong> Portugal 🇵🇹</p>
         <p><strong>Clubes:</strong> Sporting CP, Manchester United, Real Madrid, Juventus, Al-Nassr</p>
         <p><strong>Títulos destacados:</strong> 5 Champions League, Eurocopa 2016, 3 Premier League, 2 Ligas españolas</p>
@@ -83,16 +79,14 @@
     </section>
   </main>
 
-  <footer class="footer">
-  <div class="social-icons">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-solid fa-envelope"></i>
-    <i class="fa-brands fa-tiktok"></i>
-    <i class="fa-brands fa-x-twitter"></i>
-  </div>
-  <p>© 2026 FootballWorld - Todos los derechos reservados.</p>
-</footer>
+  <div id="footer-container"></div>
+  
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
 </html>

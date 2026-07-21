@@ -4,46 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FootballWorld</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css.map">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>FootballWorld</h1>
   </header>
 
-  <nav>
-  <ul class="navbar">
-    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-    <li><a href="pages/torneos.html"><i class="fa-solid fa-trophy"></i> Torneos</a></li>
-    <li><a href="pages/jugadores.html"><i class="fa-solid fa-person-running"></i> Jugadores Históricos</a></li>
-    <li><a href="pages/equipos.html"><i class="fa-solid fa-futbol"></i> Equipos Históricos</a></li>
-    <li><a href="pages/contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
-  </ul>
-</nav>
+  <div id="menu-container"></div>
 
   <main id="inicio">
   <section class="intro">
     <h2>Bienvenido a FootballWorld</h2>
     <p>
-      Aquí encontrarás información sobre los torneos más importantes del mundo, 
-      jugadores legendarios que marcaron la historia y equipos icónicos que 
-      dejaron huella en el fútbol.
-    </p>
+    Aquí encontrarás información sobre los torneos más importantes del mundo, 
+    jugadores legendarios que marcaron la historia y equipos icónicos que 
+    dejaron huella en el fútbol. Este espacio está pensado para los verdaderos 
+    apasionados del deporte rey, aquellos que vibran con cada gol, cada jugada 
+    memorable y cada título levantado en lo alto de un estadio lleno de emoción.
+  </p>
+  <p>
+  En FootballWorld no solo descubrirás datos y estadísticas, sino también las 
+  historias que hacen único a cada campeonato. Aquí podrás recorrer los momentos 
+  que definieron la grandeza de jugadores y equipos, revivir partidos que marcaron 
+  época y entender cómo el fútbol se convirtió en un fenómeno mundial. Desde las 
+  hazañas épicas en mundiales hasta las rivalidades más intensas en ligas locales, 
+  cada detalle está reunido para que vivas la magia del deporte rey en un solo lugar.
+  </p>
+  <p>
+    Prepárate para explorar un universo donde la pasión, la gloria y la tradición 
+    se encuentran. Porque el fútbol no es solo un deporte: es cultura, es unión, 
+    es emoción compartida que trasciende fronteras y generaciones.
+  </p>
+  </section>
+
+  <section class="torneos-preview" data-aos="fade-right">
+    <div class="imagen">
+      <img src="/img/Torneos/copas.webp" alt="Varias copas de fútbol">
+    </div>
+    <div class="descripcion">
+      <h3><i class="fa-solid fa-trophy"></i> Torneos</h3>
+      <p>
+        Los torneos de fútbol son el corazón de la pasión deportiva. Desde la 
+        <strong>Copa Mundial</strong> que une naciones cada cuatro años, hasta la 
+        <strong>Champions League</strong> que enfrenta a los mejores clubes de Europa, 
+        cada campeonato tiene historias inolvidables, goles épicos y momentos que 
+        marcaron generaciones. En esta sección podrás explorar la historia, los 
+        ganadores más destacados y las curiosidades que hacen de cada torneo un 
+        evento único.
+      </p>
+      <a href="pages/torneos.html">Explorar Torneos</a>
+    </div>
+  </section>
+
+  <section class="jugadores-preview" data-aos="flip-up">
+    <div class="imagen">
+      <img src="/img/Jugadores/jugadores.webp" alt="Jugadores legendarios de fútbol">
+    </div>
+    <div class="descripcion">
+      <h3><i class="fa-solid fa-person-running"></i> Jugadores Históricos</h3>
+      <p>
+        El fútbol ha sido marcado por figuras que trascendieron generaciones. Desde 
+        <strong>Pelé</strong> y <strong>Maradona</strong> hasta <strong>Messi</strong> y <strong>Johan Cruyff</strong>, 
+        cada jugador dejó huella con su talento, pasión y momentos inolvidables. 
+        En esta sección podrás conocer sus trayectorias, estadísticas, anécdotas y 
+        cómo inspiraron a millones de aficionados alrededor del mundo.
+      </p>
+      <a href="pages/jugadores.html">Explorar Jugadores</a>
+    </div>
+  </section>
+
+  <section class="equipos-preview" data-aos="zoom-in">
+    <div class="imagen">
+      <img src="/img/Equipos/equipos.webp" alt="Equipos históricos de fútbol">
+    </div>
+    <div class="descripcion">
+      <h3><i class="fa-solid fa-futbol"></i> Equipos Históricos</h3>
+      <p>
+        Los clubes de fútbol son más que instituciones deportivas: son símbolos de 
+        identidad y orgullo. Equipos como <strong>Barcelona</strong>, 
+        <strong>Juventus</strong> o <strong>Manchester United</strong> han escrito páginas doradas 
+        en la historia del fútbol. Aquí descubrirás sus títulos más importantes, 
+        sus jugadores emblemáticos y los momentos que los convirtieron en leyendas.
+      </p>
+      <a href="pages/equipos.html">Explorar Equipos</a>
+    </div>
   </section>
   </main>
 
-<footer class="footer">
-  <div class="social-icons">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-solid fa-envelope"></i>
-    <i class="fa-brands fa-tiktok"></i>
-    <i class="fa-brands fa-x-twitter"></i>
-  </div>
-  <p>© 2026 FootballWorld - Todos los derechos reservados.</p>
-</footer>
+  <div id="footer-container"></div>
+
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
 </html>

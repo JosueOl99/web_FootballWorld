@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FootballWorld</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/menu.css">
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css.map">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,34 +16,41 @@
     <h1>FootballWorld</h1>
   </header>
 
-  <nav>
-    <ul class="navbar">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="torneos.html">Torneos</a></li>
-      <li><a href="jugadores.html">Jugadores Históricos</a></li>
-      <li><a href="equipos.html">Equipos Históricos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+  <div id="menu-container"></div>
 
  <main>
-   <section id="contacto" class="contacto">
-   <h2>Contacto</h2>
-   <p>Escríbenos para desarrollar tu próximo proyecto web.</p>
-   <a href="../index.html" class="btn-contacto">Contactar</a>
-   </section>
+  <section id="contacto" class="contacto container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+       <h1 class="text-center animate__animated animate__backInRight">Contáctanos</h1>
+         <p class="text-center">
+           Si deseas más información sobre tus equipos o jugadores favoritos, o quieres enviarnos tus sugerencias,
+            completa el formulario y estaremos encantados de ayudarte.
+         </p>
+
+        <h3 class="text-center">¡Escríbenos para ayudarte!</h3>
+        <form>
+          <div class="mb-3">
+           <label for="email" class="form-label">Correo electrónico</label>
+           <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+          </div>
+          <div class="mb-3">
+           <label for="mensaje" class="form-label">Mensaje</label>
+           <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+         </div>
+         <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn-enviar">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
  </main>
 
-<footer class="footer">
-  <div class="social-icons">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-solid fa-envelope"></i>
-    <i class="fa-brands fa-tiktok"></i>
-    <i class="fa-brands fa-x-twitter"></i>
-  </div>
-  <p>© 2026 FootballWorld - Todos los derechos reservados.</p>
-</footer>
+<div id="footer-container"></div>
+
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

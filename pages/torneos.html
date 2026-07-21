@@ -4,68 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FootballWorld</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/menu.css">
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css.map">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>FootballWorld</h1>
   </header>
 
-  <nav>
-    <ul class="navbar">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="torneos.html">Torneos</a></li>
-      <li><a href="jugadores.html">Jugadores Históricos</a></li>
-      <li><a href="equipos.html">Equipos Históricos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+  <div id="menu-container"></div>
 
   <main>
     <section id="torneos" class="torneos">
       <h2>Torneos Internacionales</h2>
 
-      <article class="torneo">
+      <article class="torneo" data-aos="flip-left">
         <h3>Copa Mundial de la FIFA</h3>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL83LTvToa8nccaPI89lY_5sofRJdezQf_lw0dW2DbQk1eMROMgVx8tAE&s=10" alt="Trofeo Mundial" class="imagen-torneo">
+        <img src="/img/Torneos/World-Cup.webp" alt="Trofeo Mundial" class="imagen-torneo">
         <p><strong>Organizador:</strong> FIFA</p>
         <p><strong>Fundación:</strong> 1930</p>
         <p><strong>Descripción:</strong> El torneo de selecciones más importante del mundo, disputado cada 4 años.</p>
         <p><strong>Seleccion mas campeona:</strong> Brasil (1958, 1962, 1970, 1994, 2002).</p>
       </article>
 
-      <article class="torneo">
+      <article class="torneo" data-aos="zoom-in-right">
         <h3>UEFA Champions League</h3>
-        <img src="https://s2.elespanol.com/2022/05/23/deportes/futbol/674692775_224511072_1706x1280.jpg" alt="Trofeo Champions League" class="imagen-torneo">
+        <img src="/img/Torneos/Champions-League.webp" alt="Trofeo Champions League" class="imagen-torneo">
         <p><strong>Organizador:</strong> UEFA</p>
         <p><strong>Fundación:</strong> 1955</p>
         <p><strong>Descripción:</strong> El torneo de clubes más prestigioso de Europa, reúne a los mejores equipos del continente.</p>
         <p><strong>Club más ganador:</strong> Real Madrid (15 títulos).</p>
       </article>
 
-      <article class="torneo">
+      <article class="torneo" data-aos="zoom-in-left">
         <h3>Copa Libertadores</h3>
-        <img src="https://www.eluniverso.com/resizer/v2/24DIKIOMERDZBE6WLTE4V4YYPY.jpg?auth=9428db338f1df5e79a36a889d933ce862d0573d025df606b18bf661cca1655e7&width=1055&height=670&quality=75&smart=true" alt="Trofeo Libertadores" class="imagen-torneo">
+        <img src="/img/Torneos/Copa-Libertadores.webp" alt="Trofeo Libertadores" class="imagen-torneo">
         <p><strong>Organizador:</strong> CONMEBOL</p>
         <p><strong>Fundación:</strong> 1960</p>
         <p><strong>Descripción:</strong> El torneo de clubes más importante de Sudamérica.</p>
         <p><strong>Club más ganador:</strong> Independiente de Avellaneda (7 títulos).</p>
       </article>
 
-      <article class="torneo">
+      <article class="torneo" data-aos="zoom-in-down">
         <h3>Eurocopa</h3>
-        <img src="https://cdn2.mediotiempo.com/uploads/media/2022/10/09/eurocopa-llevara-cabo-alemania-twitter.jpg" alt="Trofeo Eurocopa" class="imagen-torneo">
+        <img src="/img/Torneos/Eurocopa.webp" alt="Trofeo Eurocopa" class="imagen-torneo">
         <p><strong>Organizador:</strong> UEFA</p>
         <p><strong>Fundación:</strong> 1960</p>
         <p><strong>Descripción:</strong> El campeonato de selecciones europeas, disputado cada 4 años.</p>
         <p><strong>Seleccion mas campeona:</strong> España (1964, 2008, 2012, 2024).</p>
       </article>
 
-      <article class="torneo">
+      <article class="torneo" data-aos="flip-down">
         <h3>Copa América</h3>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXk1ZOLnOisGRROzyBAfWPpgoR9V2AQHLovTvPxz3rZEyqccPFTFo9ViPD&s=10" alt="Trofeo Copa América" class="imagen-torneo">
+        <img src="/img/Torneos/Copa-America.webp" alt="Trofeo Copa América" class="imagen-torneo">
         <p><strong>Organizador:</strong> CONMEBOL</p>
         <p><strong>Fundación:</strong> 1916</p>
         <p><strong>Descripción:</strong> El torneo de selecciones más antiguo del mundo, disputado en Sudamérica.</p>
@@ -74,16 +70,14 @@
     </section>
   </main>
 
-  <footer class="footer">
-  <div class="social-icons">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-solid fa-envelope"></i>
-    <i class="fa-brands fa-tiktok"></i>
-    <i class="fa-brands fa-x-twitter"></i>
-  </div>
-  <p>© 2026 FootballWorld - Todos los derechos reservados.</p>
-</footer>
+  <div id="footer-container"></div>
+  
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/footer.js"></script>
+  <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
 </html>
